@@ -16,8 +16,6 @@ This repository uses a **GitHub Action** that triggers when a pull request is op
 1. Prints a message to the console with an environment variable.
 2. Prints a message to the console with a secret configured in GitHub.
 
-### Output Example
-![GitHub Action Output](./screenshots/github-action-output.png)
 
 ## Associated Documentation
 
@@ -38,7 +36,6 @@ To configure `MY_SECRET`:
 
 ## Related Links
 
-- [Bootcamp Repository](https://github.com/your-username/repo-name)
 - [TypeScript on GitHub](https://github.com/microsoft/TypeScript)
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
 
