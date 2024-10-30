@@ -1,0 +1,27 @@
+name: PR Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  print-messages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+      - name: Print environment variable
+        env:
+          MY_VARIABLE: "Hello from environment variable"
+        run: |
+          echo "Environment variable: $MY_VARIABLE"
+
+      - name: Print environment secret
+        run: |
+          if [ -z "${{ secrets.MY_SECRET }}" ]; then
+            echo "Secret MY_SECRET is not available."
+          else
+            echo "Secret MY_SECRET is available."
+          fi
